@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "记录每一天",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

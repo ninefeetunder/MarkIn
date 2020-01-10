@@ -1,0 +1,14 @@
+<view class="container">
+  <swiper previous-margin="80rpx" next-margin="80rpx">
+    <swiper-item>
+      <view class="newMark"></view>
+    </swiper-item>
+    <swiper-item>
+      <view class="newMark">
+        <view class="desc">每一天都值得记录~</view>
+        <image mode="widthFix" src="https://7a68-zhh-cloud-b7a1a9-1257892988.tcb.qcloud.la/add.png?sign=33d0e543f8f4f30dcc64d010afa99bda&t=1540813605" />
+        <view class="title">开始记录今天</view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="show-img" mode="aspectFill" src="{{imgUrl}}" />
+  <button class="entry-btn" bindtap="handleGotoMarks">Mark In</button>
+</view>
