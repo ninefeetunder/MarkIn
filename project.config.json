@@ -59,6 +59,20 @@
 					"id": -1,
 					"name": "marks主页",
 					"pathName": "pages/marks/marks",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mark详情页",
+					"pathName": "pages/markinfo/markinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加页",
+					"pathName": "pages/newMark/newMark",
 					"scene": null
 				}
 			]

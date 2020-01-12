@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/marks/marks"
+    "pages/marks/marks",
+    "pages/markinfo/markinfo",
+    "pages/newMark/newMark"
   ],
   "window": {
     "backgroundTextStyle": "light",

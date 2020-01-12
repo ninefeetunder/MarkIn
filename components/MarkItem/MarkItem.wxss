@@ -1,0 +1,28 @@
+.mark-item {
+  width: 90%;
+  height: 80%;
+  margin: 20% auto 0;
+  border-radius: 20rpx;
+  position: relative;
+}
+
+.mark-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 40rpx;
+  background: #fff;
+  height: 30%;
+  color: #000;
+  border-radius: 20rpx;
+}
+
+.mark-content > .desc {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mark-content > .time {
+  margin-top: 40rpx;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "markin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninefeetunder/MarkIn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ninefeetunder/MarkIn/issues"
+  },
+  "homepage": "https://github.com/ninefeetunder/MarkIn#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.0.3"
+  }
+}

@@ -1,0 +1,7 @@
+<view class="mark-item">
+  <slot></slot>
+  <view class="mark-content">
+    <view class="desc">今天天气不错呢</view>
+    <view class="time">2020-1-12</view>
+  </view>
+</view>

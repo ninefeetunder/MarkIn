@@ -1,0 +1,46 @@
+.container {
+  padding: 40rpx;
+  height: 100%;
+}
+
+.input-title {
+  margin-top: 20rpx;
+  height: 80rpx;
+  border: 1rpx solid #000;
+  border-radius: 8rpx;
+}
+
+.input-title > input {
+  height: 100%;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+.choose-container {
+  margin-top: 40rpx;
+}
+
+.title {
+  font-size: 28rpx;
+  color: #aaa;
+}
+
+.choose-layout {
+  margin-top: 40rpx;
+}
+
+.choose-layout image {
+  width: 100%;
+  height: 320rpx;
+  border-radius: 10rpx;
+}
+
+.choose-btn {
+  margin-top: 40rpx;
+}
+
+.choose-btn > button {
+  margin: 30rpx auto 0;
+  width: 70%;
+  border-radius: 40rpx;
+}

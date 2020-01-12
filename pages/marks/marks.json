@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "mark-item": "/components/MarkItem/MarkItem"
+  },
   "navigationBarTitleText": "记录每一天",
   "enablePullDownRefresh": true,
   "backgroundTextStyle": "dark"
