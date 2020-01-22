@@ -1,6 +1,12 @@
 let defaultUrl = 'http://localhost:3000'
 
-export default function request (params) {
+export default function (params) {
+
+  wx.showLoading({
+    title: '数据获取中...',
+    mask: true
+  })
+
   let {url, data, method} = params
   return new Promise((resolve, reject) => {
     wx.request({
@@ -13,6 +19,9 @@ export default function request (params) {
       fail (err) {
         console.log('请求模块出错', err)
         reject(err)
+      },
+      complete () {
+        wx.hideLoading()
       }
     })
   })

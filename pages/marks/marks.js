@@ -1,4 +1,4 @@
-// pages/marks/marks.js
+import getMarksList from '../../request/marks'
 Page({
 
   /**
@@ -14,6 +14,9 @@ Page({
       }
     ]
   },
+  onShow () {
+    this._getMarksList()
+  },
   handleGoMarkDetail () {
     wx.navigateTo({
       url: '/pages/markinfo/markinfo'
@@ -22,6 +25,18 @@ Page({
   handleAddNewMark () {
     wx.navigateTo({
       url: '/pages/newMark/newMark'
+    })
+  },
+  // --------- 请求数据处理函数 --------
+  _getMarksList () {
+    getMarksList().then((res) => {
+      let list = res.data.marksList
+      this.setData({
+        marksList: list
+      })
+      .catch((err) => {
+        console.log('打卡列表获取失败', err)
+      })
     })
   }
 })
