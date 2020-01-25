@@ -1,6 +1,6 @@
 <view class="mark-info">
-  <image src="/assets/images/2020.jpg" mode="aspectFill"/>
+  <image src="{{data.imgUrl}}" mode="aspectFill"/>
   <view class="mark-desc-info">
-    2020 Hello!
+    {{data.content}}
   </view>
 </view>

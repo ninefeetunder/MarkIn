@@ -1,10 +1,11 @@
 import request from '../utils/request'
 
-
-export default function () {
+export default function (id) {
   const params = {
-    url: 'getmarks',
-    data: {},
+    url: 'get_mark_info',
+    data: {
+      id
+    },
     method: 'get'
   }
   return request(params)
