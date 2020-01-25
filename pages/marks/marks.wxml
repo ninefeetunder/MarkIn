@@ -1,8 +1,12 @@
 <view class="container">
   <swiper previous-margin="80rpx" next-margin="80rpx">
     <swiper-item bindtap="handleGoMarkDetail">
-      <mark-item>
-        <image class="mark-img" src="/assets/images/2020.jpg" mode="widthFix"/>
+      <mark-item
+      wx:for="{{marksList}}"
+      wx:key="item.id"
+      title="{{item.title}}"
+      time="{{item.time}}">
+        <image class="mark-img" src="{{item.imgUrl}}" mode="widthFix"/>
       </mark-item>
     </swiper-item>
     <swiper-item>
