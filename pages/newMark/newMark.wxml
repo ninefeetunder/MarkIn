@@ -40,7 +40,6 @@
     </view>
   </view>
   <view class="choose-btn">
-    <button type="primary"> 保存 </button>
-    <button type="warn"> 删除 </button>
+    <button type="primary" bind:tap="handleAddMark"> 保存 </button>
   </view>
 </view>
