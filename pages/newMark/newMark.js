@@ -22,23 +22,40 @@ Page({
   },
   handleGetTitle (res) {
     let { value } = res.detail
+    console.log(value)
     value = value.trim()
     this.setData({
       markTitle: value
     })
   },
   handleAddMark () {
-    if (!this.imgUrl || !this.markTitle) {
+    if (!this.data.imgUrl || !this.data.markTitle) {
       wx.showToast({
         title: '请填写相关信息',
         duration: 2000
       })
       return
     }
+
     const data = {
       img_url: this.imgUrl,
       title: this.markTitle
     }
+    wx.uploadFile({
+      url: 'https://images.ac.cn/Home/Index/UploadAction',
+      filePath: data.img_url,
+      name: 'file',
+      formData: {},
+      success: (res) => {
+        // console.log(res)
+        url = JSON.parse(res.data)
+        data.img_url = url
+      },
+      fail: (err) => {
+        console.log('图片上传失败', err)
+        return
+      }
+    })
     addNewMark(data)
     .then(res => {
       // 实现路由跳转
